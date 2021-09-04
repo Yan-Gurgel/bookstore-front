@@ -6,14 +6,15 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { MatIconModule } from "@angular/material/icon";
 import { MatCardModule } from "@angular/material/card";
-import { RouterModule } from "@angular/router";
+import { MatTableModule } from "@angular/material/table";
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./components/template/header/header.component";
 import { NavComponent } from "./components/template/nav/nav.component";
 import { FooterComponent } from "./components/template/footer/footer.component";
 import { HomeComponent } from "./components/views/home/home.component";
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from "./app-routing.module";
+import { CategoryReadComponent } from "./components/views/category/category-read/category-read.component";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
     NavComponent,
     FooterComponent,
     HomeComponent,
+    CategoryReadComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import { AppRoutingModule } from './app-routing.module';
     MatIconModule,
     MatCardModule,
     AppRoutingModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
